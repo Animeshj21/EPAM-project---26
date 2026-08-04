@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Bank | Customer Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <header>
+
+            <div>
+                <h1>🏦 ABC Bank</h1>
+                <p>Customer Dashboard</p>
+            </div>
+
+            <div class="time-box">
+                <span id="date"></span>
+                <span id="time"></span>
+            </div>
+
+        </header>
+
+        <!-- Customer Card -->
+
+        <section class="customer-card">
+
+            <div class="profile">
+
+                <div class="avatar">
+                    AJ
+                </div>
+
+                <div>
+
+                    <h2>Animesh Jain</h2>
+
+                    <p>Customer ID : BK10245</p>
+
+                    <p>Savings Account</p>
+
+                </div>
+
+            </div>
+
+            <div class="balance-card">
+
+                <h3>Current Balance</h3>
+
+                <h1>₹ <span id="balance">50000</span></h1>
+
+            </div>
+
+        </section>
+
+        <!-- Action Cards -->
+
+        <section class="actions">
+
+            <!-- Deposit -->
+
+            <div class="card">
+
+                <h2>Deposit Money</h2>
+
+                <input
+                    type="number"
+                    id="depositAmount"
+                    placeholder="Enter amount">
+
+                <button id="depositBtn">
+
+                    Deposit
+
+                </button>
+
+            </div>
+
+            <!-- Withdraw -->
+
+            <div class="card">
+
+                <h2>Withdraw Money</h2>
+
+                <input
+                    type="number"
+                    id="withdrawAmount"
+                    placeholder="Enter amount">
+
+                <button id="withdrawBtn">
+
+                    Withdraw
+
+                </button>
+
+            </div>
+
+            <!-- Transfer -->
+
+            <div class="card">
+
+                <h2>Transfer Money</h2>
+
+                <input
+                    type="text"
+                    id="receiver"
+                    placeholder="Receiver Name">
+
+                <input
+                    type="number"
+                    id="transferAmount"
+                    placeholder="Amount">
+
+                <button id="transferBtn">
+
+                    Transfer
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Message -->
+
+        <div id="message">
+
+            Welcome to ABC Bank
+
+        </div>
+
+        <!-- Transaction History -->
+
+        <section class="history">
+
+            <div class="history-header">
+
+                <h2>
+
+                    Recent Transactions
+
+                </h2>
+
+                <button id="clearHistory">
+
+                    Clear
+
+                </button>
+
+            </div>
+
+            <ul id="historyList">
+
+            </ul>
+
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+
+            <p>
+
+                JavaScript Case Study Project
+
+            </p>
+
+            <p>
+
+                HTML | CSS | JavaScript
+
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
